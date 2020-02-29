@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #E9FFEA;
+    width: 940;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalho, .rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.corpo, .corpo-localizacao, .corpo-quem-somos, .corpo-estrutura, .corpo-cursos, .corpo-projetos {
+    width: 75%;
+    order: 2;
+    border-right: 1px dashed #000000;
+    padding: 10px;
+}
+
+.corpo-projetos {
+    
+}
+
+.corpo-quem-somos{
+    text-align: center;
+}
+
+.menu {
+    width: 25%;
+    order: 3;
+    padding: 5px;
+    font-size: 110%;
+}
+
+.cabecalho {
+    order: 1;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.rodape {
+    order: 4;
+    border-top: 1px solid #000000;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.cabecalho img {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.cabecalho h1 {
+    font-size: 180%;
+    text-transform: uppercase;
+    color: #006A03;
+}
+
+.cabecalho h2 {
+    font-size: 160%;
+    color: #008903;
+}
+
+.rodape img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.rodape .autor {
+    font-weight: bold;
+    color: #7E0000;
+}
+
+.corpo p, .corpo-projetos p {
+    text-align: justify;
+    line-height: 150%;
+    text-indent: 3em;
+}
+
+.corpo img {
+    float: left;
+    margin: 10px;
+    width: 230px;
+}
+
+.corpo img.secundaria {
+    float: right;
+    width: 180px;
+}
+
+.corpo-projetos .campus {
+    font-weight: bold;
+    color: #02D700;
+}
+
+.corpo h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    background: url('imagens/seta.png') no-repeat 0 center;
+}
+
+.corpo-estrutura li, .corpo-cursos li, .corpo-projetos li{
+    padding-left: 15px; 
+    line-height: 150%;
+    background: url('imagens/seta.png') no-repeat 0 center;
+}
+
+.corpo-estrutura img {
+    margin-top: 30px;
+    padding-left: 10em;
+    width: 80%;
+}
+
+.corpo-estrutura p {
+    font-size: 110%;
+    font-family: Lato;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.corpo-quem-somos h2, .corpo-localizacao h2, .corpo-estrutura h2, .corpo-cursos h2, .corpo-projetos h2{
+    background: url('imagens/seta.png') no-repeat 0 center;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-weight: bold;
+    text-indent: 1em;
+    margin-bottom: 10px;
+}
+
+.corpo-quem-somos h4 {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.corpo-quem-somos h3, .corpo-cursos h3, .corpo-projetos h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.corpo-cursos img, .corpo-projetos img {
+    margin: 10px;
+    float: right;
+    width: 48%;
+}
+
+.corpo-cursos .secundario {
+    float: right;
+}
+
+.corpo-quem-somos img, .corpo-projetos .secundario {
+    float: left;
+    width: 40%;
+    margin-left: 15px;
+}
+
+.corpo h3, .corpo-localizacao h2, .corpo-quem-somos h2, .corpo-estrutura h2, .corpo-cursos h2{
+    font-size: 110%;
+    border-bottom: 1px dotted #000000;
+    width: 100%;
+}
+
+.corpo-localizacao p{
+    text-align: justify;
+    font-family: Lato;
+    line-height: 150%;
+}
+
+.corpo-localizacao img {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.menu h3 {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu h3::before {
+    content: url('imagens/menu.png');
+    margin-right: 5px;
+}
+
+.menu li {
+    border-bottom: 1px solid #4EA947;
+}
+
+.menu li:first-of-type {
+    border-top: 1px solid #4EA947;
+}
+
+.menu li a {
+    padding: 20px;
+    display: block;
+    padding-left: 40px;
+    background: url('imagens/seta.png') no-repeat 20px center;
+}
+
+.menu li a:hover {
+    background-color: #02D700;
+}
